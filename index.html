@@ -157,7 +157,13 @@ table.lb{width:100%;border-collapse:collapse}table.lb td,table.lb th{padding:8px
 <div class="card">Coming soon<br><small>Talk-to-an-expert sites</small></div>
 </div>
 <p style="margin-top:20px">© 2026 Sammy’s Mashup Games · playmashupgames.com</p></div></footer>
-<div class="ask"><div class="bubble">Tap me for the inside scoop!</div><button aria-label="Ask Sammy chat" onclick="alert('Ask Sammy chat – placeholder in draft')"></button></div>
+<div class="ask"><div class="bubble">Tap me for the inside scoop!</div><button id="sammyTap" aria-label="Tap Mini Sammy to hear a tip from Sammy" aria-pressed="false"></button></div>
+<audio id="sammyClip" src="audio/sammy_tap.mp3" preload="auto"></audio>
+<script>(function(){var b=document.getElementById('sammyTap'),a=document.getElementById('sammyClip');
+function done(){b.setAttribute('aria-pressed','false');b.setAttribute('aria-label','Tap Mini Sammy to hear a tip from Sammy');}
+b.addEventListener('click',function(){if(!a.paused){a.pause();a.currentTime=0;done();return;}
+a.currentTime=0;var p=a.play();b.setAttribute('aria-pressed','true');b.setAttribute('aria-label','Stop Sammy\'s tip');if(p&&p.catch)p.catch(done);});
+a.addEventListener('ended',done);})();</script>
 <script>
 const A=[["Neon Highway","The Voltage Kids","Night Drive","1987"],["Basement Groove","Lo-Fi Lou","Slow Burn","1996"],["Porch Light","Juniper Lane","Home Again","2009"]];
 function reveal(e){e.preventDefault();const f=new FormData(e.target);let s=0,h='';
