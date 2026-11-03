@@ -43,6 +43,8 @@ const DEEP_CUTS=[
  {"q": "Who wrote Home Alone?", "a": "John Hughes", "wrong": ["Chris Columbus", "Joe Pesci", "Harold Ramis"], "note": "Directed by Chris Columbus.", "source": "https://en.wikipedia.org/wiki/Home_Alone"},
  {"q": "Who composed the Home Alone score?", "a": "John Williams", "wrong": ["Danny Elfman", "Alan Silvestri", "Hans Zimmer"], "note": "", "source": "https://en.wikipedia.org/wiki/Home_Alone"},
  {"q": "Who directed It's a Wonderful Life?", "a": "Frank Capra", "wrong": ["Billy Wilder", "John Ford", "George Cukor"], "note": "", "source": "https://en.wikipedia.org/wiki/It's_a_Wonderful_Life"},
- {"q": "What is the name of the angel in It's a Wonderful Life?", "a": "Clarence", "wrong": ["Gabriel", "Harold", "Joseph"], "note": "", "source": "https://en.wikipedia.org/wiki/It's_a_Wonderful_Life"}
+ {"q": "What is the name of the angel in It's a Wonderful Life?", "a": "Clarence", "wrong": ["Gabriel", "Harold", "Joseph"], "note": "", "source": "https://en.wikipedia.org/wiki/It's_a_Wonderful_Life"},
+ {"q": "Who wrote and recorded the Christian classic \"We Are the Reason\" (1980)?", "a": "David Meece", "wrong": ["Michael W. Smith", "Steve Camp", "Keith Green"], "note": "From his 1980 album Are You Ready?", "source": "https://hymnary.org/text/we_are_the_reason_that_he_gave_his_life"},
+ {"q": "How high did David Meece's \"We Are the Reason\" peak on Billboard's Christian AC chart (1981)?", "a": "No. 14 (it was never No. 1)", "wrong": ["No. 1", "No. 3", "No. 7"], "note": "", "source": "https://www.ccmencyclopedia.com/post/are-you-ready-1980"}
 ];
 if(typeof module!=='undefined')module.exports=DEEP_CUTS;
