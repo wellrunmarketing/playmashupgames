@@ -173,7 +173,7 @@ a.forEach((v,j)=>{if(k[j]&&k[j]==v.toLowerCase())s++});
 h+=`<div><b>Clip ${i+1}</b><br>Song: ${a[0]}<br>Artist: ${a[1]}<br>Album: ${a[2]}<br>Year: ${a[3]}<br><audio controls src="audio/clip${i+1}.mp3" style="width:100%"></audio></div>`});
 document.getElementById('ans').innerHTML=h;document.getElementById('score').innerHTML=`<b class=ok>You got ${s} / 12.</b> (Sample answers below.)`;
 document.getElementById('score').innerHTML+=pmgRecord('mashup1','Mashup Round 1',s,12)+pmgUnlock('worship',s,12);document.getElementById('rev').classList.add('show');document.getElementById('rev').scrollIntoView({behavior:'smooth'})}
-</script><script src="themes.js"></script><script src="score.js"></script><script src="mm.js"></script><script>
+</script><script src="themes.js"></script><script src="waves.js"></script><script src="score.js"></script><script src="deep_cuts_bonus.js"></script><script src="mm.js"></script><script>
 mmRound(document.getElementById('mm1'),[
 {q:"Are you not entertained?",movie:"Gladiator",actor:"Russell Crowe",year:"2000"},
 {q:"They drew first blood, not me.",movie:"First Blood",actor:"Sylvester Stallone",year:"1982"},
